@@ -108,3 +108,134 @@ nav,
   font-size: 24px;
   font-family: "Lato", sans-serif;
 }
+
+/* ----- PORTFOLIO PAGE ----- */
+.heading {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.portfolioHeading,
+.portfolio .starSvg svg {
+  color: #2c3e50;
+}
+
+.portfolioDivider {
+  background-color: #2c3e50;
+}
+
+.portfolioHeading {
+  text-align: center;
+}
+
+.portfolio {
+  padding: 6rem 0;
+}
+
+.sixCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.sixCards img {
+  width: 400px;
+  height: 100%;
+  border-radius: 0.6rem;
+}
+
+.sixCards > div {
+  position: relative;
+  cursor: pointer;
+}
+
+.caption {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plusSvg {
+  width: 70px;
+  color: #fff;
+}
+
+.sixCards > div:hover .caption {
+  opacity: 1;
+}
+
+/* ----- ABOUT PAGE ----- */
+.about {
+  background-color: #1abc9c;
+  padding: 6rem 0;
+  width: 100%;
+}
+
+.aboutHeading,
+.about .starSvg svg {
+  color: #fff;
+  text-align: center;
+}
+
+.twoTexts {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.twoTexts p {
+  width: 40%;
+  line-height: 1.5;
+}
+
+.downloadButton button {
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 8px;
+  padding: 1.2rem 1.6rem;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  margin-top: 2rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.downloadButton button svg {
+  width: 20px;
+}
+
+.downloadButton {
+  display: flex;
+  justify-content: center;
+}
+
+.downloadButton a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.downloadButton button:hover {
+  background-color: #fff;
+}
+
+.downloadButton button:hover a {
+  color: #000;
+}

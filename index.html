@@ -295,8 +295,8 @@
               </svg>
             </span>
             Free Download!
-          </button>
           </a>
+        </button>
       </div>
     </section>
 
@@ -307,7 +307,7 @@
       </div>
 
       <div class="dividerAndStar">
-        <div class="divider"></div>
+        <div class="divider contactDivider"></div>
         <div class="starSvg">
           <svg
             class="svg-inline--fa fa-star"
@@ -326,13 +326,43 @@
             ></path>
           </svg>
         </div>
-        <div class="divider"></div>
+        <div class="divider contactDivider"></div>
       </div>
 
       <div class="formContainer">
-        <form class="contactContainer">
-          <label for="name">Full Name</label>
-          <input type="text" name="name" id="name" />
+        <form class="contactContainerForm">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Phone number"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="8"
+            placeholder="Message"
+            required
+          ></textarea>
+          <div class="sendButtonContainer">
+            <button type="submit" disabled>Send</button>
+          </div>
         </form>
       </div>
     </section>

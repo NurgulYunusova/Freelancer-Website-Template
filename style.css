@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
 /* ----- NAVIGATION BAR ----- */
 header {
@@ -31,10 +31,80 @@ nav,
 
 .navbarElements a {
   color: #fff;
+  transition: all 0.15s ease-in-out;
+}
+
+.navbarElements li {
+  cursor: pointer;
 }
 
 .navbarElements li:first-child {
   background-color: #1abc9c;
   padding: 1.1rem;
   border-radius: 0.3rem;
+}
+
+.navbarElements li:nth-child(2),
+.navbarElements li:nth-child(3) {
+  padding: 1.1rem;
+  border-radius: 0.3rem;
+}
+
+.navbarElements li:nth-child(2):hover a,
+.navbarElements li:nth-child(3):hover a {
+  color: #1abc9c;
+}
+
+/* ----- MAIN PAGE ----- */
+.mainPage {
+  width: 100%;
+  background-color: #1abc9c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 90vh;
+}
+
+.avatarImage {
+  width: 15rem;
+}
+
+.avatarAndHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainPageHeading {
+  margin-top: 2.3rem;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.dividerAndStar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.divider {
+  width: 7rem;
+  height: 0.3rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.starSvg svg {
+  width: 2.3rem;
+}
+
+.mainPageText {
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
 }

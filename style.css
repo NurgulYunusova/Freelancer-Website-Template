@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ----- NAVIGATION BAR ----- */
 header {
   width: 100%;
@@ -289,6 +293,10 @@ nav,
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 24px;
   font-family: "Lato", sans-serif;
+}
+
+.contactContainerForm textarea {
+  resize: vertical;
 }
 
 .contactContainerForm input::placeholder,
